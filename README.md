@@ -1,19 +1,38 @@
-# A SvelteKit template on Gitpod
+# create-svelte
 
-This is a [SvelteKit](https://kit.svelte.dev) template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/).
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Next Steps
+## Creating a project
 
-Click the button below to start a new development environment:
+If you're seeing this, you've probably already done this step. Congrats!
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-sveltekit)
+```bash
+# create a new project in the current directory
+npm init svelte
 
-## Get Started With Your Own Project
+# create a new project in my-app
+npm init svelte my-app
+```
 
-### A new project
+## Developing
 
-Click the above "Open in Gitpod" button to start a new workspace. Once you're ready to push your first code changes, Gitpod will guide you to fork this project so you own it.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### An existing project
+```bash
+npm run dev
 
-To get started with SvelteKit on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) file which contains the configuration to improve the developer experience on Gitpod. To learn more, please see the [Getting Started](https://www.gitpod.io/docs/getting-started) documentation.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
