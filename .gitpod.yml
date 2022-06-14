@@ -1,3 +1,4 @@
+---
 #
 # Learn more about this Gitpod configuration file in the documentation at https://www.gitpod.io/docs/configuration
 #
@@ -7,10 +8,10 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks
 tasks:
-  - init: npm install
+  - init: pnpm install
     command: |
       export HMR_HOST=`gp url 3000`
-      npm run dev
+      pnpm dev
 
 github:
   prebuilds:
@@ -34,3 +35,5 @@ github:
 vscode:
   extensions:
     - svelte.svelte-vscode
+    - esbenp.prettier-vscode
+    - PKief.material-icon-theme
